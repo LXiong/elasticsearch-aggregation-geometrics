@@ -64,6 +64,8 @@ Given these documents:
 
 #### avg-geo-distance
 
+Caculate average distance for each kind of pokemon.
+
 Request:
 ```
 {
@@ -159,6 +161,9 @@ Similar to avg-geo-distance
 Similar to avg-geo-distance
 
 ### Ordering a terms aggregation
+
+Find nearest pokemons group by pokemon's name and order them from near to far.
+
 Request:
 ```
 {
