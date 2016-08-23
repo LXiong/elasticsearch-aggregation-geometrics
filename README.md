@@ -1,5 +1,6 @@
 # elasticsearch-aggregation-geometrics
-Add single-value metrics aggregation on geo-point fields
+
+This plugin adds single-value metrics aggregation on geo-point fields, incluing `avg`/`sum`/`min`/`max` values of distance for each bucket. Since they're single-value metrics, they can be used to sort a parent terms aggregation. 
 
 ## Installing Geo-Metrics
 ### Cloning the source
@@ -21,10 +22,11 @@ Additionally, if your java version is not 1.8, you need to edit the file `plugin
 ```
 mvn package
 ```
+It will create a zip file in the `releases` directory.
 
 ### Installing to your elasticsearch
 
-Extract the zip to Elasticsearch's `plugin` path directly, or use the 'bin/plugin' command to install it.
+Extract the zip file to Elasticsearch's `plugin` path directly, or use the 'bin/plugin' command to install it.
 
 ## Wroking with Geo-Metrics
 
